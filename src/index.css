@@ -1,13 +1,1127 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+  font-family: 'Spartan',sans-serif;
+  }
+  
+  
+  :root{
+    --PrimaryColor: hsl(225, 50%,48%);
+    --SecondaryColor: hsl(180,47,53%);
+    --ColorOne: hsl(15, 74%, 70%);
+    --ColorTwo: hsl(28, 100%,82%);
+    --HoverColor: hsl( 225, 56%, 59%);
+    --WhiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0, 12%);
+    --textColor: hsl(240, 1%, 48%);
+    --borderColor: hsl(0, 0%, 83%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText:rgb(145, 145, 145);
+    --inputColor:hsl(330, 12%, 97%);
+    --box-Shadow :rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --transition : 0.4s ease-in-out;
+  }
+  
+  body{
+    background-color: var(--WhiteColor);
+  
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;0,800;1,500&family=Poppins:wght@400;500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .section {
+    padding: 4rem 0 2rem;
+  }
+  
+  .container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .icon{
+    font-size:1.3rem;
+    cursor:pointer;
+  }
+  
+  
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+  
+  .grid{
+    display: grid;
+    align-items: center;
+  }
+  
+  .none{
+    display:none;
+  } 
+  
+  .btn{
+    padding: .7rem 1.5rem;
+    border: none;
+    border-radius:3rem;
+    background-color: var(--PrimaryColor);
+    outline: none;
+    cursor: pointer;
+    color:var(--WhiteColor);
+  
+    a{
+      color: var(--WhiteColor);
+      font-weight: 500;
+    }
+    &:hover{
+      background-color:var(--HoverColor);
+    }
+  }
+  
+  
+  img, video{
+    width: 100%;
+    height:auto;
+  }
+  
+  input {
+    font-size: 100%;
+    color: var(--greyText);
+  }
+  
+  p{
+    font-size: 13px;
+    color: var(--greyText);
+    line-height:22px;
+  }
+  
+  h4{
+    padding:1rem 0;
+    font-weight: 700;
+    color: var(--blackColor);
+  }
+  
+  h2{
+    font-size: 25px;
+    padding:1rem 0;
+    color: var(--blackColor);
+  }
+  
+  /* navbar styling start*/
+  
+  .navbar{
+    position: fixed;
+    flex-direction: column;
+    width:100%;
+    z-index:1000;
+  }
+
+  .navbar .logoDiv .Logo{
+    width: 10%;
+  }
+  
+  .navbarOne{
+    /* background-color:var(--SecondaryColor); */
+    background:rgb(241, 241, 241);
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+  }
+  .navbarOne .icon:hover{
+    color: var(--PrimaryColor);
+  }
+  .navbarOne .atb{
+    gap: 1rem;
+  }
+  .navbarOne span{
+    color: var(--blackColor);
+    font: size 13px;
+    cursor:pointer;
+  
+    &:hover{
+      color: var(--PrimaryColor);
+      font-size:700;
+    }
+  }
+  
+  .navbarTwo{
+    position: fixed;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    width:100%;
+    align-items:center;
+    display: flex;
+    top:3rem;
+    transition: .3s ease-in-out;
+  }
+  
+  
+
+  
+  
+  @media screen and (max-width: 768px) {
+   .navbarTwo .navbarMenu {
+    position:absolute;
+    background:rgb(241, 241, 241);
+    padding:1.5rem;
+    border-radius: 10px;
+    top: 5rem;
+    right:50%;
+    width:80%;
+    transform:translateX(50%);
+    z-index: 1000px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border:3px solid white;
+    transition: .2s ease-in-out;
+   } 
+
+   .navbarTwo .navbarMenu2{
+    display: none;
+   }
+  
+  
+  
+   .navbarMenu .menu{
+    flex-direction: column;
+    gap:.5rem;
+    text-align: center;
+   }
+  
+   .navbarMenu .menu li{
+    padding: .5rem;
+    cursor: pointer;
+    color:var(--blackColor);
+  
+    &:hover{
+      color: rgb(70, 68, 68);
+      font-weight: 700;
+  
+    }
+   }
+  
+   .btnOne{
+    display: block;
+    justify-content: center;
+    margin:auto;
+    margin-top:1rem;
+   }
+  
+  .navbarTwo .btnTwo{
+    display: none;
+  }
+  
+  .navbarTwo .toggleIcon .icon{
+   font-size: 30px;
+   color: var(--blackColor);
+  }
+  
+  
+  
+  }
+  
+  
+  
+  /* home section styleing*/
+  
+  .home{
+
+    padding-top:10rem;
+    text-align: center;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .home .mainText{
+    color: var(--blackColor);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 2.5rem;
+  }
+  
+  .home .planeImage{
+  width: 100%;
+  margin: 1rem auto 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5rem;
+  }
+  
+  .home .videoDiv{
+    width: 100%;
+  }
+  .home .planeImage .videoDiv .video{
+  border-radius: 100rem;
+  width:100%;
+  }
+  
+  .home .planeImage .plane{
+    position: absolute;
+    width:100%;
+    top:-70%;
+  }
+  
+  .navbar_with_Bg{
+    background:rgb(241, 241, 241);
+  
+    padding: .5rem 1rem;
+    box-shadow: var(--box-Shadow);
+  }
+  
+  /*search section*/
+  
+  .search .sectionContainer{
+  width: 100%;
+  padding: 1.5rem;
+  border:2px solid var(--greyBg);
+  border-radius: 16px;
+  row-gap:2rem;
+  }
+  .search .sectionContainer .btns{
+  padding:.5rem;
+  background-color: var(--greyBg);
+  width: 100%;
+  flex-direction:column;
+  margin: auto;
+  }
+  
+  .search .sectionContainer .btns .singleBtn{
+  padding: .8rem;
+  font-size: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
+  
+  &:hover{
+    background-color:var(--PrimaryColor);
+    color: var(--WhiteColor);
+    font-weight: 500;
+    transition: .3s ease;
+  }
+  }
+  
+  .active{
+    background-color:var(--PrimaryColor);
+    color: var(--WhiteColor);
+    font-weight: 500;
+  }
+  
+  .search .sectionContainer .searchInputs{
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  }
+  .search .sectionContainer .singleInput .iconDiv{
+    background-color: var(--greyBg);
+  padding: 16px 10px;
+  border-radius: 3rem;
+  margin-right: 1rem;
+  }
+  
+  .search .sectionContainer .singleInput .iconDiv .icon{
+  
+  color: black;
+  opacity: .7;
+  }
+  
+  .search .sectionContainer .texts h4{
+  padding-top: 0;
+  padding-bottom:.7rem;
+  color: black;
+  font-weight: 700;
+  }
+  
+  .search .sectionContainer .texts input{
+    width: 95%;
+    outline: none;
+    border: none;
+    background: transparent;
+    &::placeholder{
+      font-size: 12px;
+      opacity: .5;
+    }
+  }
+  
+  /*support styling */
+  
+  
+  .support .sectionContainer .titlesDiv{
+  text-align: center;
+  }
+  
+  .support .sectionContainer .titlesDiv small{
+  letter-spacing:.8rem;
+  text-transform:uppercase;
+  font-size:13px;
+  color:var(--blackColor);
+  line-height: 1.5rem;
+  }
+  
+  
+  
+  .support .sectionContainer .infoDiv{
+  margin-top: 2rem;
+  gap: 1.5rem;
+  
+  }
+  
+  .support .sectionContainer .infoDiv .textDiv{
+   gap:1.5rem;
+    }
+  
+    .support .sectionContainer .infoDiv .textDiv .singleInfo .number{
+       background:var(--PrimaryColor);
+       padding:5px 12px;
+       width: 40px;
+       border-radius: 3rem;
+       text-align: center;
+       font-size: 13px;
+       font-weight: 700;
+       color:var(--WhiteColor);
+       }
+  
+       .support .sectionContainer .infoDiv .textDiv .singleInfo .colorOne{
+        background-color: var(--ColorOne);
+       }
+       
+       .support .sectionContainer .infoDiv .textDiv .singleInfo .colorTwo{
+        background-color: var(--ColorTwo);
+       }
+  
+  
+       .support .sectionContainer .imgDiv{
+       width:100%;
+       max-width: 420px;
+      /* margin-top: 5rem; */
+      }
+      .support .sectionContainer .imgDiv img{
+      
+      
+      padding: 1rem;
+      width:33rem;
+      }
+  
+  
+      /*info styling*/
+      .info{
+        background:rgb(241, 241, 241);
+      }
+  
+      .info .infoContainer .titleDiv{
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        justify-content: center;
+  
+      }
+  
+      .info .infoContainer .cardsDiv{
+        gap:1.5rem;
+        margin-top: 3rem;
+      }
+  
+      .info .infoContainer .cardsDiv .singleCard{
+      background-color: white;
+      padding: 3rem 2rem;
+      border-radius:10rem;
+      gap: 1rem;
+      text-align: center;
+      margin:auto;
+      height: 320px;
+      width:90%;
+      max-width: 250px;
+      }
+  
+      .info .infoContainer .cardsDiv .singleCard .iconDiv{
+      justify-content: center;
+      margin: auto;
+      background-color: var(--PrimaryColor);
+      width: max-content;
+      height: 55px;
+      padding:1rem;
+      border-radius: 3rem;
+      }
+  
+      .info .infoContainer .cardsDiv .singleCard .iconDiv .icon{
+        color: white;
+      }
+  
+      .info .infoContainer .cardsDiv .singleCard .cardTitle{
+        font-weight: 700;
+        color: var(--blackColor);
+      }
+  
+      .info .infoContainer .cardsDiv .singleCard  .ColorOne{
+    background-color: var(--ColorOne); 
+   }
+  
+      .info .infoContainer .cardsDiv .singleCard .ColorTwo{
+    background-color: var(--ColorTwo); 
+      
+      }
+  
+  
+      /*lounge style*/
+     
+   .lounge .sectionContainer{
+    gap:1.5rem;
+   }
+      .lounge .sectionContainer .imgDiv{
+        margin: auto;
+      }
+  
+      .lounge .sectionContainer .imgDiv img{
+        width: 100%;
+        max-width: 430px;
+      }
+  
+      .lounge .sectionContainer .grids {
+       margin-top:1rem;
+       gap:1.5rem;
+  
+      }
+  
+      .lounge .sectionContainer .grids .singleGrid .gridTitle{
+       display: block ;
+       padding-bottom:.5rem;
+       font-weight:500px;
+       color: var(--blackColor);
+      }
+  
+  
+  
+    /* travelers  style*/
+  
+    .travelers .sectionContainer{
+      text-align: center;
+    }
+  
+    .travelers .sectionContainer .travelersContainer{
+      margin-top: 1rem;
+      gap: 1.5rem;
+      
+    }
+  
+    .travelers .sectionContainer .travelersContainer .singleTraveler{
+      position: relative;
+      height: 340px;
+      width: 85%;
+      max-width:280px;
+      overflow:hidden;
+      border-radius: 10rem;
+      gap:1rem;
+      margin: auto; 
+    }
+  
+   
+  
+    .travelers .sectionContainer .travelersContainer .singleTraveler
+     .destinationImage{
+      height:100%; 
+      width:100%;
+      top:0;
+      right:0;
+      left:0; 
+      bottom:0; 
+     object-fit:cover;
+     position: absolute;
+    }
+    .travelers .sectionContainer .travelersContainer
+   .singleTraveler .travelersPicture .travelerImage{
+      left:40%; 
+      position: absolute;
+      height:50px;
+      width:50px;
+      padding:1px;
+      object-fit: contain;
+      bottom: 30px;
+      filter: brightness(150%);
+      border-radius:5rem;
+      transition:.4s ease-in-out;
+      background-color: rgb(247, 244, 244);
+      transform: translateX(-50%);
+      border:5px solid rgb(71, 110, 135);
+      animation: animated 2.3s infinite;
+    } 
+    
+    @keyframes animated {
+      0%{
+        transform: translateY(0px);
+      }
+      
+      50%{
+        transform: translateY(8px);
+      }
+  
+      100%{
+        transform: translateY(0px);
+      }
+    }
+  
+    .travelers .sectionContainer .travelersContainer
+    .singleTraveler .travelersDetails .travelerName{
+  position: absolute;
+  bottom:-100%;
+  width: 100%;
+  height: max-content;
+  background-color: white;
+  padding:1.5rem 1rem;
+  /* border-radius:10rem; */
+  animation:animatedBorders 2.3s infinite
+  }
+   .travelers .sectionContainer .travelersContainer
+  .singleTraveler:hover .travelersDetails .travelerName{
+    bottom: 0 !important;
+    transition: 1s ease-in-out !important;
+  
+  }
+  .travelers .sectionContainer .travelersContainer
+  .singleTraveler:hover .travelersPicture .travelerImage{
+    bottom: 110px;
+    transition:1s ease-in-out;
+  }
+  
+  @keyframes animatedBorders {
+  
+    0%{
+      border-radius:0;
+    }
+    50%{
+      border-radius: 5rem;
+    }
+    100%{
+      border-radius:0;
+    }
+    
+  }
+  
+  
+  
+  .travelers .sectionContainer .travelersContainer
+  .singleTraveler .travelersDetails .travelerName span{
+  display: block;
+  color: black;
+  font-weight: 700;
+  }
+  
+  .travelers .sectionContainer .travelersContainer
+  .singleTraveler .travelersDetails .travelerName p{
+    color:var(--PrimaryColor);
+    font-style: italic;
+  }
+    
+  
+
+
+  /* subscribe css*/
+
+  .subscribe{
+    background-color: rgb(247, 244, 244);
+  }
+
+  .section .sectionContainer{
+    text-align: center;
+  }
+
+  .section .sectionContainer .inputDiv{
+    margin-top: 1rem;
+    flex-direction: column;
+    background: white;
+    border-radius: 1rem;
+  }
+
+  .section .sectionContainer .inputDiv input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1rem .5rem;
+    &::placeholder{
+      font-size:13px;
+      opacity: .5;
+    }
+  }
+  
+  .section .sectionContainer .inputDiv .btn{
+    width:100%;
+  }
+
+
+
+  /* footer css */
+
+  .footer{
+    background-color: rgb(247, 244, 244);
+    }
+
+  .footer .sectionContainer{
+    gap: 2.5rem;
+
+  }
+
+  .footer .sectionContainer .gridOne{
+    gap: 1rem;
+    margin:auto;
+    width:100%;
+    display: grid;
+    text-align: center;
+
+  }
+  .footer .sectionContainer .gridOne .logoDiv .Logo{
+    width:30%;
+  }
+
+  .footer .sectionContainer .gridOne .logoDiv .socialIcon{
+    margin-top: 1rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .footer .sectionContainer .gridOne .logoDiv .socialIcon .icon{
+    height: 50px;
+    width:30px;
+    border-radius: 10rem;
+    border: 1px solid var(--borderColor);
+    box-shadow: var(--box-Shadow);
+    padding:.4rem;
+    color: var(--greyText);
+
+  &:hover{
+    background-color: var(--PrimaryColor);
+    transform: translateY(-7px);
+    transition:var(--transition);
+    border: 1px solid var(--PrimaryColor);
+    color: var(--WhiteColor);
+  }
+  }
+
+  .footer .sectionContainer .gridOne .footerLinks{
+    display: grid;
+  }
+
+  .footer .sectionContainer .gridOne .footerLinks .linkTitle{
+    color: var(--blackColor);
+    font-weight: 500;
+    display: block;
+    padding: 1rem;
+  }
+
+  .footer .sectionContainer .gridOne .footerLinks li a{
+    display: block;
+    color: var(--greyText);
+    transition: var(--transition);
+    padding: .3rem;
+
+    &:hover{
+      transform: translateX(7px);
+    color: var(--PrimaryColor);
+    }
+  }
+
+  .footer .copyRightDiv{
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-top:1px solid var(--greyText);
+    text-align: center;
+  }
+
+
+  /* media screen styling =====================================>*/
+
+
+   @media screen and (min-width:480px){
+
+   .home{
+    padding-top: 12rem;
+   }
+
+   .search .sectionContainer .searchInputs{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+   }
+
+
+  /* travel section styling*/
+  .travelers .sectionContainer .travelersContainer{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+
+  /*  subscribe section  */
+
+  .subscribe .sectionContainer{
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .subscribe .sectionContainer .inputDiv{
+    padding:0 .5rem;
+    border-radius: 3rem;
+    flex-direction:row;
+  }
+
+  
+/* footer section  */
+
+.footer .sectionContainer {
+  align-items: flex-start;
+  grid-template-columns:repeat(2,1fr);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.footer .sectionContainer .footerLinks{
+  
+justify-content: center;
+  }
+
+  }
+
+
+  @media screen and (min-width:570px){
+
+    .home .mainText{
+     width:80%;
+    }
+
+    .home .planeImage .planeImage .video{
+      border-radius:15rem;
+      width: 80%;
+    }
+
+    .home .planeImage .plane{
+      position: absolute;
+      width:80%;
+      top:-70%;
+    }
+
+    .search .sectionContainer .btns{
+      border-radius: 3rem;
+      flex-direction:row;
+    }
+ 
+    .support .sectionContainer .infoDiv .textDiv
+    {
+      margin-top: 2rem;
+    grid-template-columns:repeat(2,1fr);
+    }
+
+
+   .info .infoContainer .titleDiv{
+    flex-direction:row;
+   }
+
+   .info .infoContainer .titleDiv h2{
+    text-align: left;
+    max-width: 500px;
+   }
+
+   .info .infoContainer .cardsDiv {
+    grid-template-columns:repeat(2,1fr);
+  
+   }
+
+
+   .lounge .sectionContainer .grids{
+     grid-template-columns: repeat(2,1fr);
+   }
+
+
+   .subscribe .sectionContainer .inputDiv{
+   justify-content: space-between;
+  }
+
+  .subscribe .sectionContainer .inputDiv .btn{
+  max-width: max-content;
+  }
+
+
+  .footer .sectionContainer .gridOne{
+    padding-top: 2rem;
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  }
+    
+
+  @media screen and (min-width:680px){
+    .home .mainText{
+      width: 80%;
+    }
+    .home  .planeImage .videoDiv{
+      width: 100%;
+    }
+    .home  .planeImage .videoDiv .video{
+      height:80%;
+      width:80%;
+      border-radius: 15rem;
+    }
+    .home .mainText .homeImages .plane{
+      width: 70%;
+      top:-80%;
+    }
+
+    .search .sectionContainer .btn{
+      border-radius: 3rem ;
+      flex-direction:row;
+    }
+    .search .sectionContainer .searchInputs{
+      grid-template-columns: repeat(3,1fr);
+    }
+
+    .support .sectionContainer .infoDiv .textDiv
+    {
+      margin-top: 2rem;
+    grid-template-columns:repeat(3,1fr);
+    }
+
+    .support .sectionContainer .infoDiv .imgDiv img{
+      width:100%;
+      display: flex;
+      margin-left: 30%;
+    }
+
+/* .info .infoContainer .cardsDiv .singleCard{
+background-color: red;
+ width:20%;
+} */
+
+
+    .footer .sectionContainer .gridOne{
+      grid-template-columns: repeat(4,1fr);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    
+    .navbar{
+      align-items: center;
+    }
+
+    
+    .navbar .navbarTwo .navbarMenu2{
+      display: flex;
+      gap: 1.5rem;
+     }
+
+     .navbar .navbarTwo .navbarMenu2 .btnOne{
+      display:none;
+     }
+     
+     .navbar .toggleIcon{
+      display: none;
+     }
+
+    .navbar .navbarOne .none li{
+      font-size: 13px;
+      gap:.5rem;
+      color: var(--textColor);
+      &:hover{
+        color: var(--PrimaryColor);
+        text-decoration: underline;
+      }
+    }
+
+    .navbar .navbarTwo{
+      justify-content: space-between;
+      align-items: center;
+    }
+
+      .navbar .navbarMenu2 .menu .menuItem{
+      padding: 0 .5rem;
+      font-size: 14px;
+      cursor: pointer;
+      color: var(--textColor);
+      font-weight: 700;
+      &:hover{
+        color: var(--PrimaryColor);
+        font-weight: 700;
+      }
+      }
+
+
+    .navbar .navbarTwo .logoDiv .Logo{
+      max-width: 20%;
+    }
+    .navbar .navbarTwo .menu{
+      flex-direction: row;
+      gap: .5rem;
+    }
+
+
+    .home .planeImage .videoDiv .video{
+      width:70%;
+    }
+
+    .home .planeImage .plane{
+      position: absolute;
+    width:60%;
+    top:-60%;
+    }
+
+
+    .search .sectionContainer .btns{
+     width: 70%;
+     border-radius: 3rem;
+     flex-direction: row;
+    }
+
+    .search .sectionContainer .searchInputs{
+      grid-template-columns: repeat(4,1fr);
+    }
+ 
+    .search .sectionContainer .singleInput .texts input{
+      width:100%;
+    }
+
+    
+
+    .support .sectionContainer .infoDiv  {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 2rem;
+      /* margin-top: 5rem; */
+      padding: 1rem;
+    }
+
+    .support .sectionContainer .infoDiv .imgDiv img{
+    
+    margin-top: 3rem;
+      width:110%;
+      margin-left:0%;
+    }
+    
+    .support .sectionContainer .infoDiv .textDiv
+    {
+      margin-top: 2rem;
+    grid-template-columns:repeat(1,1fr);
+    }
+
+
+    .info .infoContainer{
+     padding:0 6rem;
+    }
+
+    .info .infoContainer .titleDiv{
+      width:90%;
+      margin:auto;
+      align-items: center;
+    }
+ 
+     .info .infoContainer .cardsDiv{
+      grid-template-columns: repeat(3,1fr);
+     }
+
+     .info .infoContainer .singleCard{
+      max-width: 260px;
+      padding: 3rem 1rem;
+     }
+      
+  
+
+     .lounge .sectionContainer{
+      grid-template-columns: repeat(2,1fr);
+      /* width:65%; */
+      justify-content: space-between;
+    }
+
+    
+     .lounge .sectionContainer .imgDiv img{
+      /* position: absolute;  */
+      /* left: 22rem; */
+      height: 25rem;
+      width: 20rem;
+    }
+    .lounge .sectionContainer .textDiv{
+      grid-area: 1;
+    }
+    .lounge .sectionContainer .grids{
+      grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+    .travelers .sectionContainer .travelersContainer{
+      grid-template-columns: repeat(3,1fr);
+    }
+
+
+}    
+
+@media screen and (min-width:960px) {
+  
+  .home{
+    padding-top:13px;
+  }
+  .home .mainText{
+    width: 70%;
+    padding-bottom:1.5rem;
+    font-size: 22px;
+    line-height:4rem;
+  }
+
+  .search .sectionContainer .searchInputs{
+    grid-template-columns: repeat(5 ,1fr);
+  }
+
+
+    .travelers .sectionContainer .travelersContainer{
+      grid-template-columns: repeat(4,1fr);
+      margin: 3rem 0;
+    }
+
+
+}
+  
+
+@media screen and (min-width:1024px){
+  p{
+    font-size: 15px;
+  
+    line-height:25px;
+  }
+  
+  h4{
+    font-size: 20px;
+  }
+  
+  h2{
+    font-size: 27px;
+
+  }
+ 
+  
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  
+  .container{
+width: 75%;
+margin: auto;
+}
+ 
+.home .mainText      {
+  margin-top: 10rem;
+}
+
+.home .planeImage .videoDiv .video{
+  width:75%;
+}
+
+.home .planeImage .plane{
+  position: absolute;
+width:65%;
+top:-65%;
+}
+
+
+
 }
