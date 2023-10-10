@@ -452,7 +452,7 @@
         color: white;
       }
   
-      .info .infoContainer .cardsDiv .singleCard .cardTitle{
+      .info .infoContainer .cardsDiv .singleCard span{
         font-weight:bold;
           font-size:50px;
         color: var(--blackColor);
@@ -1101,12 +1101,7 @@ justify-content: center;
       margin: 3rem 0;
     }
 
-    .info .infoContainer .cardsDiv .singleCard p{
-      height:max-content;
-      padding:0;
-      width:90%;
-      text-align: center;
-        }
+  
 
 }
 
