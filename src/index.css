@@ -302,7 +302,7 @@
   &:hover{
     background-color:var(--PrimaryColor);
     color: var(--WhiteColor);
-    font-weight: 500;
+    font-weight: 500px;
     transition: .3s ease;
   }
   }
@@ -310,7 +310,7 @@
   .active{
     background-color:var(--PrimaryColor);
     color: var(--WhiteColor);
-    font-weight: 500;
+    font-weight: 500px;
   }
   
   .search .sectionContainer .searchInputs{
@@ -708,7 +708,7 @@
 
   .footer .sectionContainer .gridOne .footerLinks .linkTitle{
     color: var(--blackColor);
-    font-weight: 500;
+    font-weight: 500px;
     display: block;
     padding: 1rem;
   }
@@ -869,8 +869,10 @@ justify-content: center;
      padding:100px;
      width:100%;
      padding:2px;
-
   }
+      .travelersContainer .travelersPicture img{
+      width:100%;
+      }
 
   }
 
