@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-fly-website/static/css/main.ddba138b.css",
+    "main.js": "/react-fly-website/static/js/main.daf67020.js",
+    "static/js/787.472dbd3d.chunk.js": "/react-fly-website/static/js/787.472dbd3d.chunk.js",
+    "static/media/home.mp4": "/react-fly-website/static/media/home.7675426f49aa75ae8ad3.mp4",
+    "static/media/dubai.jpg": "/react-fly-website/static/media/dubai.9c311829c64981a35638.jpg",
+    "static/media/traveler4.jpg": "/react-fly-website/static/media/traveler4.8a781cce4bba8c950440.jpg",
+    "static/media/traveler1.jpg": "/react-fly-website/static/media/traveler1.4d1cdbaa196fe57d84a0.jpg",
+    "static/media/paris.jpg": "/react-fly-website/static/media/paris.1edb51da230a02d455bd.jpg",
+    "static/media/traveler2.jpg": "/react-fly-website/static/media/traveler2.dac752ce160dcc8c9514.jpg",
+    "static/media/newyork.jpg": "/react-fly-website/static/media/newyork.db3d2f3176fd6525f090.jpg",
+    "static/media/london.jpg": "/react-fly-website/static/media/london.dfc628f01088bd8b0dc6.jpg",
+    "static/media/planeWindow.png": "/react-fly-website/static/media/planeWindow.a0d942714a72a55f87b7.png",
+    "static/media/loungeImg.png": "/react-fly-website/static/media/loungeImg.28f28aaf5b92e8c465c1.png",
+    "static/media/plane.png": "/react-fly-website/static/media/plane.5da22133c0021e409a37.png",
+    "static/media/traveler3.jpg": "/react-fly-website/static/media/traveler3.3319226d2c31872843f1.jpg",
+    "index.html": "/react-fly-website/index.html",
+    "main.ddba138b.css.map": "/react-fly-website/static/css/main.ddba138b.css.map",
+    "main.daf67020.js.map": "/react-fly-website/static/js/main.daf67020.js.map",
+    "787.472dbd3d.chunk.js.map": "/react-fly-website/static/js/787.472dbd3d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddba138b.css",
+    "static/js/main.daf67020.js"
+  ]
+}
