@@ -458,7 +458,7 @@
         color: var(--blackColor);
       }
  .info .infoContainer .cardsDiv .singleCard p{
-       padding:30px;
+       padding:30px !important;
       }
   
       .info .infoContainer .cardsDiv .singleCard  .ColorOne{
