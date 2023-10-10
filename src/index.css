@@ -453,8 +453,12 @@
       }
   
       .info .infoContainer .cardsDiv .singleCard .cardTitle{
-        font-weight: 700;
+        font-weight:bold;
+          font-size:50px;
         color: var(--blackColor);
+      }
+ .info .infoContainer .cardsDiv .singleCard p{
+       padding:30px;
       }
   
       .info .infoContainer .cardsDiv .singleCard  .ColorOne{
