@@ -400,13 +400,11 @@
        .support .sectionContainer .imgDiv{
        width:100%;
        max-width: 420px;
-      /* margin-top: 5rem; */
       }
       .support .sectionContainer .imgDiv img{
       
-      
-      padding: 1rem;
-      width:33rem;
+      padding:1rem;
+      width:100%;
       }
   
   
