@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-fly-website/static/css/main.ddba138b.css",
-    "main.js": "/react-fly-website/static/js/main.daf67020.js",
+    "main.css": "/react-fly-website/static/css/main.72c9671c.css",
+    "main.js": "/react-fly-website/static/js/main.15e5be2b.js",
     "static/js/787.472dbd3d.chunk.js": "/react-fly-website/static/js/787.472dbd3d.chunk.js",
     "static/media/home.mp4": "/react-fly-website/static/media/home.7675426f49aa75ae8ad3.mp4",
     "static/media/dubai.jpg": "/react-fly-website/static/media/dubai.9c311829c64981a35638.jpg",
@@ -16,12 +16,12 @@
     "static/media/plane.png": "/react-fly-website/static/media/plane.5da22133c0021e409a37.png",
     "static/media/traveler3.jpg": "/react-fly-website/static/media/traveler3.3319226d2c31872843f1.jpg",
     "index.html": "/react-fly-website/index.html",
-    "main.ddba138b.css.map": "/react-fly-website/static/css/main.ddba138b.css.map",
-    "main.daf67020.js.map": "/react-fly-website/static/js/main.daf67020.js.map",
+    "main.72c9671c.css.map": "/react-fly-website/static/css/main.72c9671c.css.map",
+    "main.15e5be2b.js.map": "/react-fly-website/static/js/main.15e5be2b.js.map",
     "787.472dbd3d.chunk.js.map": "/react-fly-website/static/js/787.472dbd3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddba138b.css",
-    "static/js/main.daf67020.js"
+    "static/css/main.72c9671c.css",
+    "static/js/main.15e5be2b.js"
   ]
 }
