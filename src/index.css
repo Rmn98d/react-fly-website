@@ -1098,7 +1098,6 @@ justify-content: center;
     }
 
     .info .infoContainer .cardsDiv .singleCard p{
-      /* background-color: green; */
       height:max-content;
       padding:0;
       width:90%;
@@ -1147,7 +1146,4 @@ margin: auto;
 width:65%;
 top:-65%;
 }
-
-
-
 }
