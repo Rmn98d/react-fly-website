@@ -424,20 +424,20 @@
       }
   
       .info .infoContainer .cardsDiv{
-        gap:1.5rem;
+        gap:1.4rem;
         margin-top: 3rem;
       }
   
       .info .infoContainer .cardsDiv .singleCard{
       background-color: white;
-      padding: 3rem 2rem;
+      padding: 3rem 1rem;
       border-radius:10rem;
       gap: 1rem;
       text-align: center;
       margin:auto;
       height: 320px;
       width:90%;
-      max-width: 250px;
+      /* max-width: 250px; */
       }
   
       .info .infoContainer .cardsDiv .singleCard .iconDiv{
@@ -851,6 +851,29 @@ justify-content: center;
   }
     
 
+  @media screen and (max-width:500px) {
+  .support .sectionContainer .imgDiv{
+    width:100%;
+    position: relative;
+  }
+  .support .sectionContainer .imgDiv .planeWindowImges{
+    width:100%;
+  }
+   
+  .info .infoContainer .iconDiv {
+    padding:200px;
+    width:100%;
+  }
+
+  .info .infoContainer .cardsDiv .singleCard{
+     padding:100px;
+     width:100%;
+     padding:2px;
+
+  }
+
+  }
+
   @media screen and (min-width:680px){
     .home .mainText{
       width: 80%;
@@ -888,10 +911,6 @@ justify-content: center;
       margin-left: 30%;
     }
 
-/* .info .infoContainer .cardsDiv .singleCard{
-background-color: red;
- width:20%;
-} */
 
 
     .footer .sectionContainer .gridOne{
@@ -1007,7 +1026,7 @@ background-color: red;
 
 
     .info .infoContainer{
-     padding:0 6rem;
+     padding:0 2rem;
     }
 
     .info .infoContainer .titleDiv{
@@ -1078,9 +1097,16 @@ background-color: red;
       margin: 3rem 0;
     }
 
+    .info .infoContainer .cardsDiv .singleCard p{
+      /* background-color: green; */
+      height:max-content;
+      padding:0;
+      width:90%;
+      text-align: center;
+        }
 
 }
-  
+
 
 @media screen and (min-width:1024px){
   p{
